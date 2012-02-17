@@ -14,6 +14,8 @@ $ rails generate rspec:install
 -> edit notes and cmd-s
 $ git add . 
 $ git commit -m "updated README.md, .gitignore, Gemfile and rspec install."
+=> in new terminal tab $ rails s
+=> in browser http://localhost:3000
 
 -> open https://github.com/jalarge create a new 
 => git status
@@ -33,3 +35,5 @@ $ rails generate controller StaticPages home about help policy --no-test-framewo
 -> edit notes and cmd-s
 $ git add . 
 $ git commit -m "Add StaticPages controller w/ home, about, help & policy."
+
+$ rails generate integration_test static_pages
