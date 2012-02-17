@@ -1,0 +1,6 @@
+$ rails new qok -T
+$ git init
+$ mate notes.txt
+$ git add .
+$ git commit -m "Rails new qok -T, git init, notes.txt."
+
