@@ -4,3 +4,21 @@ $ mate notes.txt
 $ git add .
 $ git commit -m "Rails new qok -T, git init, notes.txt."
 
+$ git mv README.rdoc README.md
+$ cp ../README.md .
+$ cp ../.gitignore .
+$ cp ../Gemfile .
+$ bundle
+$ rails generate rspec:install
+$ git commit -a -m "updated README.md, .gitignore, Gemfile and rspec install."
+
+-> open https://github.com/jalarge create a new 
+-> update this file.
+$ git commit -a -m "updated note.txt file"
+$ git remote add origin git@github.com:jalarge/qok.git
+$ git push -u origin master
+$ heroku create --stack cedar
+$ git push heroku master
+
+
+
