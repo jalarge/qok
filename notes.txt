@@ -37,3 +37,32 @@ $ git add .
 $ git commit -m "Add StaticPages controller w/ home, about, help & policy."
 
 $ rails generate integration_test static_pages
+-> edit spec/requests/static_pages_spec.rb
+$ bundle exec rspec spec/requests/static_pages_spec.rb
+
+$ rvm get head && rvm reload                 ..remove need for prefixing 'bundle exec' to everything.
+$ chmod +x $rvm_path/hooks/after_cd_bundler  ..remove need for prefixing 'bundle exec' to everything.
+-> in /qok 
+$ bundle --binstubs=./bundler_stubs         ...if add another executable like Guard the rerun this.
+$ bundle                                    ...if made any changes to Gemfile
+$ bundle exec guard init rspec              ... installing guard
+-> edit Gaurdfile or $ cp ../Gaurdfile .
+$ spork --bootstrap
+$ cd spec
+$ cp ../spec_helper.rb ./spec/
+-> for fun $ time bundle exec rspec spec/requests/static_pages_spec.rb --drb    >> ~8.25 sec
+$ spork  ...ctr-C to quit spork server
+-> for fun $ time bundle exec rspec spec/requests/static_pages_spec.rb --drb    >> ~1.45 sec
+-> edit .rspec and add --drb to the end ... distributed ruby option or cp ../.rspec .
+-> edit and add spork support to Guardfile.
+$ [bundle exec] guard
+
+
+
+
+
+
+
+
+
+

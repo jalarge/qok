@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
+  
   def home
   end
 
@@ -8,6 +9,10 @@ class StaticPagesController < ApplicationController
   def help
   end
 
-  def policy
+  def policy  
   end
+  
+  def contact
+  end
+  
 end
